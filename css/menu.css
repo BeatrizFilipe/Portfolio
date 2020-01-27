@@ -1,0 +1,97 @@
+
+
+aside {display: flex;
+    flex-direction: column;
+    position: fixed;
+    float: inline-start;
+    width: 10%;
+    height: 100%;
+    text-align: center;
+    left: 2%;
+    align-content: center;
+    z-index: 1;
+    vertical-align: middle;
+    z-index: 5;
+    top:20%
+}
+
+aside:after {margin: 200px 10px;
+    display: absolute;
+    position: fixed;
+    float: inline-start;
+    width: 10%;
+    height: 100%;
+    text-align: center;
+    left: 2%;
+    align-content: center;
+    z-index: 1;
+}
+
+
+.timeline {position: absolute;
+    display:block;
+    width:150px;
+    margin:20px auto 0;
+}
+
+
+
+/* vertical line */
+
+.timeline::before{content: '';
+    position: absolute;
+    left: 57%;
+    top: 20%;
+    width: 6px;
+    height: 70%;
+    margin-left: -50px;
+    background: white;
+}
+
+
+.temp {position: relative;
+    display: inline-block;
+    align-content: center;
+    padding: 10px 0;
+    cursor:pointer;
+}
+
+
+/* Circles */
+
+.temp::before { 
+    content:"";
+    padding:0;
+    margin:0;
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+
+.temp h2 {overflow:hidden;
+    display:inline-block;
+    text-indent:-500px;
+    width:80px;
+    text-decoration:none;
+    text-transform:uppercase;
+    padding: 10px;
+    transition:0.2s ease;
+    margin:2px 0 0 -7px;
+}
+
+.temp:hover h2 {color:#fff;
+  text-align:center;
+  text-indent:0;
+}
+
+
+.home{position: relative;
+    display: block;
+    top: -15px;
+    left: 2%;
+}

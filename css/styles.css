@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css?family=Bungee+Inline&display=swap');
+
+
+
+
+* {box-sizing: border-box;
+margin:0;
+padding:0;
+border:0;
+scroll-behavior: smooth;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+
+
+a:-webkit-any-link{
+    text-decoration:none;
+}
+
+
+
+html, body {width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+body {display: block;
+    transition: ease-out 1.5s;
+    background-color: rgb(255, 165, 0);
+}
+
+
+
+
+
+/* HEADER */
+
+#head {position: relative;
+    top: 0;
+    overflow: hidden;
+    width: 100%;
+    justify-content: baseline;
+    background-color: rgb(43, 122, 120);
+    padding: 10px 5px;
+    z-index:100;
+}
+
+
+.navbar h1 {font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: block;
+    text-align: right;
+    color: rgb(255, 165, 0);
+    font-size: 25px;
+    text-decoration: none;
+    padding-right: 25px;
+    padding-top:5px;
+}
+
+
+.logo {display: flex;
+    float:left;
+    margin-left: 10px;
+}
+
+
+
+
+
+
+/* MAIN */
+
+#main {display: inline-block;;
+    padding: 20px;
+    height: 80%;
+    align-content: center;
+    max-width: 100%;
+    align-self: auto;
+    text-align: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+
+}
+
+
+.main {width: 100%;
+    position: absolute;
+    margin: 0 auto;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.name {position: absolute;
+    margin: -200px -800px;
+    float: right;
+    padding: 100px;
+}
+
+
+.beatriz {font-size: 100pt;
+    font-family: 'Bungee Inline', cursive;
+    color: rgb(43, 122, 120);
+    text-transform: uppercase;
+}
+
+.filipe {font-size: 100pt;
+    font-family: 'Bungee Inline', cursive;
+    color: rgb(43, 122, 120);
+    text-transform: uppercase;
+}
+
+.name2 {position: absolute;
+    float: right;
+    margin: -270px 100px;
+}
+
+.beatriz2 {float: right;
+    font-size: 100pt;
+    font-family: 'Bungee Inline', cursive;
+    color: rgb(43, 122, 120);
+    text-transform: uppercase;
+    padding-top: 30%;
+}
+
+.filipe2 {float: right;
+    font-size: 100pt;
+    font-family: 'Bungee Inline', cursive;
+    color: rgb(43, 122, 120);
+    text-transform: uppercase;
+}
+
+
+
+
+/* Footer */
+
+footer {display: block;
+    color: white;
+    background-color: rgb(43, 122, 120);
+    min-height: 400px;
+    padding-top: 100px;
+    text-align: left;
+    position: static;
+    z-index: -20;
+    margin-top: -75px;
+}
+
+.infos {display: flex;
+    float: left;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 25%;
+    width: 45%;
+}
+
+.bottom {display:flex;
+    flex-direction: row;
+}
+
+.profile img { width: 200px;
+    height: 200px;
+}
+
+.about {float: right;
+    text-align: left;
+    text-indent: 50px;
+}
+
+.contact {display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.icons {display: block;
+    font-size: 20pt;
+}
+
+.icon {display: inline-block;
+    padding:30px;
+}
+
+.number {display: flex;
+    position: relative;
+    font-size: 15pt;
+    align-items: center;
+    padding-left: 25%;
+    right: 10%;
+    top: -15%;
+}
+
+.phone {padding-right: 20px;
+    padding: -30px;
+}
+
+.rights {float: right;
+    margin-right: -75px;
+    margin-top: -148px;
+    font-family: Arial, Helvetica, sans-serif;
+    transform: rotate(-90deg);
+}
+
+
+
+/* Medium screens */
+@media all and (max-width: 800px) {
+
+    html{margin: 0;
+        width: 100%;}
+
+    header{margin:0;
+        padding:0;
+        max-width: 100%;}
+
+    main{margin-top:50px;
+        min-height:100%;}
+
+    .name{visibility: hidden;}
+
+    footer{width: 100%;}
+
+    .infos {padding-left: 5%;}
+
+    .icon img {height:20px;}
+}
+  
+
+  /* Small screens */
+@media all and (max-width: 500px) {
+
+    html{margin: 0;
+        width: 100%;}
+
+    body{margin: 0 auto;
+        padding:0;
+        width: 100%;}
+
+    header{max-width: 100%;}
+
+    main{margin-right:25%;
+        max-width:50%;}
+
+    .name{visibility: hidden;}
+    
+    .name2 {display: flex;
+        text-align: right;
+        margin: 0;}
+    
+
+    footer{width:100%;}
+
+    .infos {padding-left: 0;}
+    
+    .icon {width: 20px;}
+}
